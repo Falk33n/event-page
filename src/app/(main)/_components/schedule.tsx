@@ -1,10 +1,10 @@
-import { Starfield } from "@/components/starfield";
+import { Clock } from "lucide-react";
+import { Starfield } from "~/components/starfield";
 import {
   TypographyH2,
   TypographyH3,
   TypographyP,
-} from "@/components/ui/typography";
-import { Clock } from "lucide-react";
+} from "~/components/ui/typography";
 
 type EventSchedule = {
   /** The time for this schedule item (e.g., "6:00 PM - 7:00 PM"). */

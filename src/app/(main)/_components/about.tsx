@@ -1,5 +1,5 @@
-import { TypographyH2, TypographyP } from "@/components/ui/typography";
 import { Info } from "lucide-react";
+import { TypographyH2, TypographyP } from "~/components/ui/typography";
 
 type AboutProps = {
   /** Main description or overview of the event or subject. */

@@ -1,10 +1,10 @@
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { CircleQuestionMark, PartyPopper } from "lucide-react";
+import { Avatar, AvatarFallback, AvatarImage } from "~/components/ui/avatar";
 import {
   TypographyH2,
   TypographyH3,
   TypographyP,
-} from "@/components/ui/typography";
-import { CircleQuestionMark, PartyPopper } from "lucide-react";
+} from "~/components/ui/typography";
 
 type GenericSectionItem = {
   /** Optional name of the item (e.g., speaker name, image title). */

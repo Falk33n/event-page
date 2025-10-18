@@ -1,9 +1,6 @@
-Perfect, Master 😌. I’ve updated the README to use your GitHub username **Falk33n** and project name **event-page**, so all links, badges, and examples are correct. Here’s the full version:
-
-````markdown
-<!-- Improved compatibility of back to top link -->
-
 <a id="readme-top"></a>
+
+<!-- NEED LOGO, AND EVENT PAGE SCREENSHOT, ERROR AND GLOBAL ERROR PAGES -->
 
 <!-- PROJECT SHIELDS -->
 
@@ -11,29 +8,20 @@ Perfect, Master 😌. I’ve updated the README to use your GitHub username **Fa
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
-[![License][license-shield]][license-url]
+[![Unlicense License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
   <a href="https://github.com/Falk33n/event-page">
-    <img src="images/logo.png" alt="Code the Future Logo" width="80" height="80">
+    <img src="public/logo.png" alt="Event Page Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Code the Future: Event Page</h3>
+  <h3 align="center">Event Page</h3>
 
   <p align="center">
-    Fully dynamic event page for "Code the Future" — just edit the JSON and your page updates automatically!
-    <br />
-    <br />
-    <a href="https://github.com/Falk33n/event-page"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/Falk33n/event-page">View Demo</a>
-    &middot;
-    <a href="https://github.com/Falk33n/event-page/issues/new?labels=bug">Report Bug</a>
-    &middot;
-    <a href="https://github.com/Falk33n/event-page/issues/new?labels=enhancement">Request Feature</a>
+    Fully dynamic event page — just edit the JSON and your page updates automatically!
   </p>
 </div>
 
@@ -44,6 +32,7 @@ Perfect, Master 😌. I’ve updated the README to use your GitHub username **Fa
     <li><a href="#about-the-project">About The Project</a></li>
     <li><a href="#getting-started">Getting Started</a></li>
     <li><a href="#usage">Usage</a></li>
+    <li><a href="#project-structure">Project Structure</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
@@ -57,7 +46,7 @@ Perfect, Master 😌. I’ve updated the README to use your GitHub username **Fa
 
 [![Event Page Screenshot][product-screenshot]](https://example.com)
 
-This project is a fully dynamic, JSON-driven event page for **"Code the Future"**. The page is built with **Next.js 13**, Tailwind CSS, and TypeScript. All sections, including the hero, schedule, speakers, FAQ, tickets, and footer, are generated from a single JSON file.
+This project is a fully dynamic, JSON-driven event page. The page is built with **Next.js 15**, Tailwind CSS, and TypeScript. All sections, including the hero, schedule, speakers, FAQ, tickets, and footer, are generated from a single JSON file.
 
 **Why this project exists:**
 
@@ -82,7 +71,7 @@ This project is a fully dynamic, JSON-driven event page for **"Code the Future"*
 
 ## Getting Started
 
-Follow these steps to set up your own "Code the Future" event page locally.
+Follow these steps to set up your own event page locally.
 
 ### Prerequisites
 
@@ -91,7 +80,6 @@ Install Bun if you don’t have it yet:
 ```sh
 curl -fsSL https://bun.sh/install | bash
 ```
-````
 
 Make sure Node.js is installed if required for Next.js tooling.
 
@@ -120,7 +108,7 @@ bun dev
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- USAGE -->
+<!-- USAGE EXAMPLES -->
 
 ## Usage
 
@@ -288,7 +276,7 @@ Once you save the JSON file, the page updates automatically.
 
 ## Roadmap
 
-- [x] Dynamic hero section
+- [x] Hero section
 - [x] Generic section
 - [x] Schedule section
 - [x] FAQ section
@@ -303,17 +291,46 @@ See [open issues](https://github.com/Falk33n/event-page/issues) for more.
 
 ## Contributing
 
-Contributions are welcome! Fork the project, make changes, and create a pull request.
+Contributions are welcome! Please follow the guidelines below to keep the project organized and maintainable. Fork the project, make your changes, and submit a pull request.
 
-Steps:
+### Steps to Contribute
 
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/MyFeature`)
-3. Commit your changes (`git commit -m "Add MyFeature"`)
-4. Push to branch (`git push origin feature/MyFeature`)
-5. Open a pull request
+1. **Fork the repository** to your GitHub account.
+2. **Create a feature branch** from `develop`:
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+```sh
+git checkout -b feature/MyFeature develop
+```
+
+> All feature branches **must start with `feature/`**. Bug fixes can use `fix/` and other maintenance branches can use `chore/`.
+
+3. **Make your changes** and commit them using **conventional commits**:
+
+- `feat:` A new feature
+- `fix:` A bug fix
+- `chore:` Maintenance or refactoring
+- `docs:` Documentation updates
+- `style:` Code style changes (formatting, linting)
+- `refactor:` Code restructuring without behavior changes
+- `test:` Adding or updating tests
+
+Example:
+
+```sh
+git commit -m "feat: add ticket section to hero component"
+```
+
+4. **Push your branch** to your fork:
+
+```sh
+git push origin feature/MyFeature
+```
+
+5. **Open a Pull Request** against the `develop` branch of the main repository.
+
+> ⚠️ Pull requests should **only target the `develop` branch**, not `main`.
+
+By following this workflow, we keep the project organized, make reviews easier, and ensure consistent commit history.
 
 <!-- LICENSE -->
 
@@ -344,4 +361,4 @@ Project Link: [https://github.com/Falk33n/event-page](https://github.com/Falk33n
 [issues-url]: https://github.com/Falk33n/event-page/issues
 [license-shield]: https://img.shields.io/github/license/Falk33n/event-page.svg?style=for-the-badge
 [license-url]: https://github.com/Falk33n/event-page/blob/main/LICENSE
-[product-screenshot]: images/screenshot.png
+[product-screenshot]: public/screenshot.png

@@ -1,10 +1,10 @@
-import { Starfield } from "@/components/starfield";
+import { CircleQuestionMark } from "lucide-react";
+import { Starfield } from "~/components/starfield";
 import {
   TypographyH2,
   TypographyH3,
   TypographyP,
-} from "@/components/ui/typography";
-import { CircleQuestionMark } from "lucide-react";
+} from "~/components/ui/typography";
 
 type FaqItemProps = {
   /** The FAQ question text. */

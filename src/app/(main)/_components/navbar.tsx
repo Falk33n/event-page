@@ -1,6 +1,6 @@
-import { ThemeToggle } from "@/components/theme-toggle";
-import { cn } from "@/lib/utils";
 import Link from "next/link";
+import { ThemeToggle } from "~/components/theme-toggle";
+import { cn } from "~/lib/utils";
 
 type NavbarProps = {
   /** The title of the event, displayed in the navbar. */
@@ -14,41 +14,26 @@ export function Navbar({ title, genericSectionId }: NavbarProps) {
   return (
     <nav
       aria-label="Main navigation"
-      className="top-0 right-0 left-0 z-50 fixed bg-background/80 backdrop-blur-sm border-b border-border"
+      className="bg-background/80 border-border fixed top-0 right-0 left-0 z-50 border-b backdrop-blur-sm"
     >
-      <div className="flex justify-between items-center mx-auto px-6 py-4 max-w-7xl">
-        <ul
-          role="menubar"
-          className="flex items-center gap-8"
-        >
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+        <ul role="menubar" className="flex items-center gap-8">
           <NavbarListLink
             href="/"
             label={title}
-            className="font-medium text-foreground"
+            className="text-foreground font-medium"
           />
           <li role="menuitem">
-            <ul
-              role="menubar"
-              className="hidden md:flex items-center gap-6"
-            >
-              <NavbarListLink
-                href="#about"
-                label="About"
-              />
-              <NavbarListLink
-                href="#schedule"
-                label="Schedule"
-              />
+            <ul role="menubar" className="hidden items-center gap-6 md:flex">
+              <NavbarListLink href="#about" label="About" />
+              <NavbarListLink href="#schedule" label="Schedule" />
               <NavbarListLink
                 href={`#${genericSectionId}`}
                 label={`${genericSectionId
                   .charAt(0)
                   .toUpperCase()}${genericSectionId.slice(1)}`}
               />
-              <NavbarListLink
-                href="#faq"
-                label="FAQ"
-              />
+              <NavbarListLink href="#faq" label="FAQ" />
             </ul>
           </li>
         </ul>
@@ -75,8 +60,8 @@ function NavbarListLink({ href, label, className }: NavbarListLinkProps) {
       <Link
         href={href}
         className={cn(
-          "font-mono text-muted-foreground hover:text-foreground text-xs hover:underline hover:underline-offset-2 uppercase tracking-wider transition-colors",
-          className
+          "text-muted-foreground hover:text-foreground font-mono text-xs tracking-wider uppercase transition-colors hover:underline hover:underline-offset-2",
+          className,
         )}
       >
         {label}

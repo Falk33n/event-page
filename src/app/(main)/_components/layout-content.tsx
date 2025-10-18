@@ -1,9 +1,9 @@
-import { SkipToMainContentTrigger } from "@/components/skip-to-main";
 import type { ReactNode } from "react";
+import { SkipToMainContentTrigger } from "~/components/skip-to-main";
 import { Footer, type FooterItem } from "./footer";
 import { Navbar } from "./navbar";
 
-type LayoutContentProps = {
+type MainLayoutContentProps = {
   /** The title of the page, used for the document title. */
   title: string;
 
@@ -17,12 +17,12 @@ type LayoutContentProps = {
   children: ReactNode;
 };
 
-export function LayoutContent({
+export function MainLayoutContent({
   title,
   genericSectionId,
   footer,
   children,
-}: LayoutContentProps) {
+}: MainLayoutContentProps) {
   return (
     <>
       <SkipToMainContentTrigger />

@@ -1,8 +1,3 @@
-import { Starfield } from "@/components/starfield";
-import { buttonVariants } from "@/components/ui/button";
-import { Card, CardContent, CardTitle } from "@/components/ui/card";
-import { TypographyH1 } from "@/components/ui/typography";
-import { cn } from "@/lib/utils";
 import {
   Calendar,
   Clock,
@@ -13,6 +8,11 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import type { ReactNode } from "react";
+import { Starfield } from "~/components/starfield";
+import { buttonVariants } from "~/components/ui/button";
+import { Card, CardContent, CardTitle } from "~/components/ui/card";
+import { TypographyH1 } from "~/components/ui/typography";
+import { cn } from "~/lib/utils";
 
 type EventTicket = {
   /** The price of the ticket (e.g., "$50"). */

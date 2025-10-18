@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <!-- Home Page -->
+  <url>
+    <loc>http://localhost:3000</loc> <!-- Add your domain here -->
+    <priority>1.0</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- About Section Anchor -->
+  <url>
+    <loc>http://localhost:3000#about</loc> <!-- Add your domain here -->
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- Schedule Section -->
+  <url>
+    <loc>http://localhost:3000#schedule</loc> <!-- Add your domain here -->
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- FAQ Section -->
+  <url>
+    <loc>http://localhost:3000#faq</loc> <!-- Add your domain here -->
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+</urlset>
